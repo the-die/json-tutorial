@@ -88,9 +88,9 @@ void lept_shrink_object(lept_value* v);
 void lept_clear_object(lept_value* v);
 const char* lept_get_object_key(const lept_value* v, size_t index);
 size_t lept_get_object_key_length(const lept_value* v, size_t index);
-lept_value* lept_get_object_value(lept_value* v, size_t index);
+lept_value* lept_get_object_value(const lept_value* v, size_t index);
 size_t lept_find_object_index(const lept_value* v, const char* key, size_t klen);
-lept_value* lept_find_object_value(lept_value* v, const char* key, size_t klen);
+lept_value* lept_find_object_value(const lept_value* v, const char* key, size_t klen);
 lept_value* lept_set_object_value(lept_value* v, const char* key, size_t klen);
 void lept_remove_object_value(lept_value* v, size_t index);
 
